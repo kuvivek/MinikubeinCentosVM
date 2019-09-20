@@ -514,9 +514,6 @@ Proper installation of KVM and libvirt is highly specific to each Linux distribu
 Once configured, validate that libvirt reports no errors:
 
 ```shell
-virt-host-validate
-```
-```shell
 [kuvivek@vivekcentos ~]$ 
 [kuvivek@vivekcentos ~]$ virt-host-validate
   QEMU: Checking for hardware virtualization                                 : FAIL (Only emulated CPUs are available, performance will be significantly limited)
@@ -560,6 +557,7 @@ WARN (Unknown if this platform has IOMMU support)
 ```
 
 Since it is failed. Poweroff the VMware Virtual Machine and in the VM settings, enable all the check boxes within the Virtualization Engine.
+
 ![VMware Worstation: VM -> Hardware -> Processors -> Virtualization Engine](https://github.com/kuvivek/MinikubeinCentosVM/blob/master/images/VMwareWorkstationProcessorsSettings.JPG)
 
 ## Download, install, and start Minikube
@@ -642,7 +640,7 @@ Since it is failed. Poweroff the VMware Virtual Machine and in the VM settings, 
     [kuvivek@vivekcentos k8sInstaller]$ 
 ```
 
-Finally, run the following command to open a browser with the Kubernetes dashboard.
+12. Finally, run the following command to open a browser with the Kubernetes dashboard.
 
 ```
 [kuvivek@vivekcentos k8sInstaller]$ 
